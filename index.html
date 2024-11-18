@@ -1,27 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Page: Your name here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page: Fyza Hamdan</title>
+    <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
 
-    <!-- Set up your page structure here -->
+    <!-- Header Section -->
+    <a name="top"></a>
+    <div class="header">
+        <div class="logo">Your Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Let's talk</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Section -->
+    <section id="mainsection">
+        <div class="left-div">
+            <div class="profilecontainer">
+                <img src="img/alex.png" class="rounded-image" alt="Profile Image">
+                <p>
+                    <span>Fyza Hamdan</span>
+                    <span>Full Stack Developer</span>
+                </p>
+            </div>
+
+            <div class="profiledetails">
+                <span class="subheader">Codes in:</span>
+                <ul>
+                    <li>HTML . CSS . JavaScript</li>
+                    <li>Java</li>
+                    <li>SQL</li>
+                </ul>
+                <span class="subheader">Works in:</span>
+                <ul>
+                    <li>React</li>
+                    <li>Spring Boot</li>
+                    <li>JUnit + Mockito (Unit Tests)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-div">
+            <div class="text">
+                <h1>Hi! <span class="typing"></span></h1>
+                <p>Good day, visitor. Use this starter template as your start your portfolio development journey.</p>
+                <div class="linkcontainer">
+                    <a href="#projects">View projects below.</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <a name="projects"></a>
+    <section id="projectsection">
+        <div class="sectiontitle">Projects</div>
+        <div class="showcasecontainer">
+            <!-- Project Cards -->
+
+            <!-- Project Card #1 -->
+            <div class="projectcard">
+                <a href="#">
+                    <img src="img/web-design.jpg" alt="Web Design">
+                    <h4>Community Web Portal Design</h4>
+                    <p class="scope">Web Page Design</p>
+                    <p><span>UI/UX</span><span>HTML</span><span>CSS</span></p>
+                </a>
+            </div>
+
+            <!-- Project Card #2 -->
+            <div class="projectcard">
+                <a href="#">
+                    <img src="img/mobile-app.jpg" alt="Mobile App">
+                    <h4>Expense Calculator Web App</h4>
+                    <p class="scope">JavaScript Development</p>
+                    <p><span>User Interaction</span><span>Application Logic</span></p>
+                </a>
+            </div>
+
+            <!-- Project card #3 -->
+        <div class="projectcard">
+            <a href="#">
+                <img src="img/data-tracking.jpg" alt="Add a description here">
+                <!-- Project name -->
+                <h4>Enrollment Tracker</h4>
+                <p class="scope">Database Design</p>
+                <p><span>SQL</span><span>Data Analysis</span></p>
+            </a>
+        </div>
+
+            <!-- Project card #4 -->
+        <div class="projectcard">
+            <a href="#">
+                <img src="img/chess.jpg" alt="Add a description here">
+                <!-- Project name -->
+                <h4>Chess Game</h4>
+                <p class="scope">Java</p>
+                <p><span>Game Development</span></p>
+            </a>
+        </div>
+
+            <!-- Project card #5 -->
+        <div class="projectcard">
+            <a href="#">
+                <img src="img/fitness-tracking.jpg" alt="Add a description here">
+                <!-- Project name -->
+                <h4>Fitness Tracker</h4>
+                <p class="scope">App Development</p>
+                <p><span>SwiftUI</span><span>Swift Programming</span></p>
+            </a>
+        </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
+            <!-- Project card #6 -->
+        <div class="projectcard">
+            <a href="#">
+                <img src="img/photography.jpg" alt="Add a description here">
+                <!-- Project name -->
+                <h4>SG Arts Award</h4>
+                <p class="scope">Photography</p>
+                <p><span>Creative</span><span>Competition</span></p>
+            </a>
+        </div>
         
+            <!-- Additional Project Cards here -->
+        </div>
+        <!-- Back to Top Button -->
+        <div class="top">
+            <a href="#top">&#x25B2; Back to Top</a>
+        </div>
+    </section>
 
+    <!-- Typed.js for Typing Animation -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
     var options = {
-        strings: ['I&apos;m &lt;Your Name Here!&gt;', 'Thanks for visiting!'],
+        strings: ['Welcome To Fyza Portfolio.', 'Thanks For Visiting!'],
         typeSpeed: 100,
-        backSpeed:100,
-        loop: false
+        backSpeed: 50,
+        loop: true
     };
-    var typed = new Typed('.typing', options);
 
-    </script>
-</body>
-</html>
+    var typed = new Typed('.typing', options);
+</script>
+
